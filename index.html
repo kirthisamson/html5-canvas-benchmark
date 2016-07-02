@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		
+
+		<title>HTML5 Canvas Benchmark</title>
+
+		<script src="jquery-2.1.4.min.js"></script>
+<script src="stats.min.js"></script>
+<link href='http://fonts.googleapis.com/css?family=Roboto+Slab' rel='stylesheet' type='text/css'>
+	</head>
+	<body>
+		<style>
+		p{
+			margin: 0px;
+			font-size: 24px;
+			line-height: 30px;
+		}
+
+		body{
+		font-family: 'Roboto Slab', serif;
+		}
+
+		button{
+			width:100px;
+			height: 30px;
+		}
+			.center{
+				margin: 0 auto;
+				text-align: center;
+			}
+			.canvas
+			{
+				margin: 0px;
+				background-color: black;
+
+			}
+
+			.invisible{
+				display: none;
+			}
+		</style>
+<script>
+
+$( document ).ready(function() {
+  // Handler for .ready() called.
+
+  //jquery works - tested
+});
+	
+/*stats = new Stats();
+			stats.setMode( 0);
+			document.body.appendChild( stats.domElement );*/
+
+			
+
+
+</script>
+<div id="container" class="center">
+	<h2>HTML5 Canvas Benchmark</h2>
+		<canvas class = "canvas center" id="canvas" width="500" height="500" >
+			Sorry, your browser doesn't support the &lt;canvas&gt; element.
+		</canvas>
+		<br>
+		<br>
+<div id="st" class="center invisible" width="800"></div>
+<div>
+		<p><strong>Ball count:</strong> <span id="ballcount"></span></p>
+		<p><strong>FPS:</strong> <span id="fps_number"></span></p>
+</div>
+</br>
+<button id="start">Click to start</button>
+
+		<table id="resultsTable" class ="invisible">
+			<tr><th>Iteration</th><th>No. of Balls</th></tr>
+		</table>
+
+	</div>
+	</body>
+	
+
+
+
+<script src="main.js"></script>
+
+</html>
